@@ -1,0 +1,430 @@
+{
+	"info": {
+		"_postman_id": "da310ae9-4f85-4e5b-bc1c-36857fc9bd0e",
+		"name": "ExpertFeesAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userid",
+							"value": "demo",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "demo@demo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				},
+				"description": "Register API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userid",
+							"value": "demo",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/admin-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userid",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin-login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin-login"
+					]
+				},
+				"description": "Admin login api"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/forgot-password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userid",
+							"value": "shubham",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/forgot-password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forgot-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/update-password/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userid",
+							"value": "shubham",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/update-password/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update-password",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/course/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "course_name",
+							"value": "bca",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMjdmNDFjYTE0NmI4MmU3NDgzNDc5ZiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiYWRtaW4iOnRydWUsImlhdCI6MTU5NjQ1NDU4NSwiZXhwIjoxNTk2NDU4MTg1fQ.JSEqSFBp3dL-GImXFeIuI9-wWnEbglB10s6x9fPbwc4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/course/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"course",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/course/fetch",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "course_name",
+							"value": "bca",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMjdmNDFjYTE0NmI4MmU3NDgzNDc5ZiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiYWRtaW4iOnRydWUsImlhdCI6MTU5NjQ1NDU4NSwiZXhwIjoxNTk2NDU4MTg1fQ.JSEqSFBp3dL-GImXFeIuI9-wWnEbglB10s6x9fPbwc4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/course/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"course",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/application-form/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "category",
+							"value": "obc",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMjdmNDFjYTE0NmI4MmU3NDgzNDc5ZiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiYWRtaW4iOnRydWUsImlhdCI6MTU5NjQ1NDk0NSwiZXhwIjoxNTk2NDU4NTQ1fQ.WmEIm0bUmG6wipStqNz_2CL6EEGJnTq4eqJfzaY_iEg",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "5f273098a146b82e7483479e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/application-form/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"application-form",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/application-form/get",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMjdmNDFjYTE0NmI4MmU3NDgzNDc5ZiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiYWRtaW4iOnRydWUsImlhdCI6MTU5NjQ1NDk0NSwiZXhwIjoxNTk2NDU4NTQ1fQ.WmEIm0bUmG6wipStqNz_2CL6EEGJnTq4eqJfzaY_iEg",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "5f284de529448d34fc0d8454",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/application-form/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"application-form",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMjdmNDFjYTE0NmI4MmU3NDgzNDc5ZiIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiYWRtaW4iOnRydWUsImlhdCI6MTU5NjQ1NDk0NSwiZXhwIjoxNTk2NDU4NTQ1fQ.WmEIm0bUmG6wipStqNz_2CL6EEGJnTq4eqJfzaY_iEg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "aadhar-card",
+							"type": "file",
+							"src": "/C:/Users/Shubham Kashyap/Desktop/file_example_JPG_100kB.jpg"
+						},
+						{
+							"key": "ration-card",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "sem-one-three-five",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "sem-one-three-five",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "sem-two-four-five",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "picture",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "signature",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"upload"
+					]
+				},
+				"description": "file upload api"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/images/file_example_JPG_100kB-1596455309257.jpg",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMjg0ZGU1Mjk0NDhkMzRmYzBkODQ1NCIsImVtYWlsIjoiZGVtb0BkZW1vIiwidXNlcmlkIjoiZGVtbyIsImFkbWluIjpmYWxzZSwiaWF0IjoxNTk2NDc3MjE0LCJleHAiOjE1OTY0ODA4MTR9.G7n9WanXRCvHe4tjScSIpOVSPdWrjkAK9KJRRTEBins",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/images/file_example_JPG_100kB-1596477253887.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"images",
+						"file_example_JPG_100kB-1596477253887.jpg"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

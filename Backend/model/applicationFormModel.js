@@ -1,0 +1,106 @@
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+
+/* application form model */
+var applicationFormSchema = new Schema({
+   //personal details
+   inhouse:{ type: String, titlecase: true, trim: true },
+   category: { type: String, titlecase: true, trim: true },
+   course_name: { type: String, titlecase: true, trim: true },
+   seatno: { type: String, titlecase: true, trim: true },
+   fullname: { type: String, titlecase: true, trim: true },
+   mothername:{type:String,titlecase:true,trim:true},
+   dob: { type: String },
+   firstname: { type: String, titlecase: true, trim: true },
+   middlename: { type: String, titlecase: true, trim: true },
+   lastname: { type: String, titlecase: true, trim: true },
+   gender: { type: String, titlecase: true, trim: true },
+   mstatus: { type: String, titlecase: true, trim: true },
+   pob: { type: String, titlecase: true, trim: true },
+   nationality: { type: String, titlecase: true, trim: true },
+   religion: { type: String, titlecase: true, trim: true },
+   subcaste: { type: String, titlecase: true, trim: true },
+   mothertongue: { type: String, titlecase: true, trim: true },
+   aadhar: { type: String, titlecase: true, trim: true },
+   bloodgroup: { type: String, titlecase: true, trim: true },
+   mobileno: { type: String, titlecase: true, trim: true },
+   email: { type: String, titlecase: true, trim: true },
+   telephpne: { type: String, titlecase: true, trim: true },
+   game: { type: String, titlecase: true, trim: true },
+   extrac: { type: String, titlecase: true, trim: true },
+   ad : { type: String, titlecase: true, trim: true },
+   fincome : { type: String, titlecase: true, trim: true },
+
+   fname : { type: String, titlecase: true, trim: true },
+   foccupation : { type: String, titlecase: true, trim: true },
+   fmobile : { type: String, titlecase: true, trim: true },
+   motherfullname : { type: String, titlecase: true, trim: true },
+   moccupation : { type: String, titlecase: true, trim: true },
+   mother_mobileno : { type: String, titlecase: true, trim: true },
+   guardian_name : { type: String, titlecase: true, trim: true },
+   guardian_qualification : { type: String, titlecase: true, trim: true },
+   guardian_mobileno : { type: String, titlecase: true, trim: true },
+
+   //Education
+   ssc : { type: String, titlecase: true, trim: true },
+   board : { type: String, titlecase: true, trim: true },
+   sc : { type: String, titlecase: true, trim: true },
+   py : { type: String, titlecase: true, trim: true },
+   mo : { type: String, titlecase: true, trim: true },
+   moo : { type: String, titlecase: true, trim: true },
+   percentage : { type: String, titlecase: true, trim: true },
+   seatn : { type: String, titlecase: true, trim: true },
+   hsc : { type: String, titlecase: true, trim: true },
+   board1 : { type: String, titlecase: true, trim: true },
+   sc1 : { type: String, titlecase: true, trim: true },
+   py1 : { type: String, titlecase: true, trim: true },
+   mo1 : { type: String, titlecase: true, trim: true },
+   moo1 : { type: String, titlecase: true, trim: true },
+   percentage1 : { type: String, titlecase: true, trim: true },
+   seatn1 : { type: String, titlecase: true, trim: true },
+   sem1 : { type: String, titlecase: true, trim: true },
+   board2 : { type: String, titlecase: true, trim: true },
+   sc2 : { type: String, titlecase: true, trim: true },
+   mp2 : { type: String, titlecase: true, trim: true },
+   percentage2 : { type: String, titlecase: true, trim: true },
+   grade : { type: String, titlecase: true, trim: true },
+   sem2 : { type: String, titlecase: true, trim: true },
+   board3 : { type: String, titlecase: true, trim: true },
+   sc3 : { type: String, titlecase: true, trim: true },
+   mp3 : { type: String, titlecase: true, trim: true },
+   percentage3 : { type: String, titlecase: true, trim: true },
+   grade1 : { type: String, titlecase: true, trim: true },
+   
+
+   //Address
+   room : { type: String, titlecase: true, trim: true },
+   country : { type: String, titlecase: true, trim: true },
+   state: { type: String, titlecase: true, trim: true },
+   district: { type: String, titlecase: true, trim: true },
+   city: { type: String, titlecase: true, trim: true },
+   pincode: { type: String, titlecase: true, trim: true },
+   room1 : { type: String, titlecase: true, trim: true },
+   country1 : { type: String, titlecase: true, trim: true },
+   state1: { type: String, titlecase: true, trim: true },
+   district1: { type: String, titlecase: true, trim: true },
+   city1: { type: String, titlecase: true, trim: true },
+   pincode1: { type: String, titlecase: true, trim: true },
+   
+   //Document upload & Photo,sign
+   aadhar1: { type: String, titlecase: true, trim: true },
+   rationcard: { type: String, titlecase: true, trim: true },
+   firstterm: { type: String, titlecase: true, trim: true },
+   secondterm: { type: String, titlecase: true, trim: true },
+
+   signature: { type: String, titlecase: true, trim: true },
+   picture: { type: String, titlecase: true, trim: true },
+   accept_terms: { type: Boolean, default: false },
+
+   updated_at: { type: Date, default: Date.now },
+   status: { type: Boolean, default: true },
+   status: { type: Boolean, default: true }, 
+
+   user: { type: Schema.Types.ObjectId, ref: 'Users' },
+});
+
+module.exports = User = mongoose.model('ApplicationForm', applicationFormSchema);
